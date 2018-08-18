@@ -1,0 +1,53 @@
+    #watermark {
+  color: #d0d0d0;
+  font-size: 50pt;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  position: absolute;
+  width: 584px;
+  height: 167px;
+  margin: 0;
+  z-index: -1;
+ left:312px;
+  top:240px;
+opacity:0.4;
+    }   
+
+ .h2{
+        margin-top: -60px;
+        color: white;
+    text-shadow: 2px 2px 4px #000000;
+    }
+.button {
+    background-color:hsla(290,100%,50%,0.3);
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: none;
+    color: white;
+   padding: 20px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+      margin-top: 40px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+    text-align: center !important;
+}
+#main{
+    background: hsla(120,100%,75%,0.3);
+}
+
+.wrapper {
+    text-align: center;
+}
+.button4 {border-radius: 30px;}
+.wrapper1{
+    text-align:center;
+    border:1px;
+}
+#csstable{
+    text-align: center;
+    vertical-align:middle;
+}

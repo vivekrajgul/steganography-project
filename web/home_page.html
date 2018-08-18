@@ -1,0 +1,107 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Message page</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+           .button12 {
+    background-color:hsla(290,100%,50%,0.3);
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: none;
+    color: white;
+   padding: 20px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+   margin-left:450px;
+    float:right;
+    cursor: pointer;
+    text-align: center !important;
+}
+            body{
+        background-color:#BC8F8F;
+    }
+     #watermark {
+  color: #d0d0d0;
+  font-size: 50pt;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  position: absolute;
+  width: 584px;
+  height: 167px;
+  margin: 0;
+  z-index: -1;
+ left:352px;
+  top:167px;
+opacity:0.2;
+    }   
+
+    h2{
+        margin-top: -60px;
+        color: white;
+    text-shadow: 2px 2px 4px #000000;
+    }
+            
+.button {
+    background-color:hsla(290,100%,50%,0.3);
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: none;
+    color: white;
+   padding: 20px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+      margin-top: 300px;
+    margin-bottom: 100px;
+//    margin-right: 50px;
+    margin-left: 70px;
+    cursor: pointer;
+
+}
+.button4 {border-radius: 30px;}
+.wrapper {
+    text-align: center;
+margin-left:23%;
+}
+</style>
+ </head>
+ <body>
+     <div id="watermark">
+<p>Image Steganography</p>
+    </div>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	
+      
+      <input type="submit" name="logout" value="logout" class=button12  align=right border-radius="30px">
+    </div>       
+     
+
+    
+  </div>
+</nav>
+
+    
+  
+<div class="wrapper"> 
+
+<a href="showitemservlet" class="button button4">Move to decrypt mode</a>
+<a href="encrypt.html" class="button button4" style="margin-left:70px;">Move to encrypt mode</a>
+</div>
+<div calss="wrapper1">
+<h2 align="center"><strong style="margin-right: 100px;">Your Message has been encoded</strong></h2>
+</div>
+
+ </body>
+</html>
+
+
+

@@ -1,0 +1,71 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome Page</title>
+<style>
+   #watermark {
+  color: #d0d0d0;
+  font-size: 50pt;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  position: absolute;
+  width: 585px;
+  height: 167px;
+  margin: 0;
+  z-index: -1;
+ left:336px;
+  top:204px;
+opacity:0.4;
+    }   
+    body{
+        background-color:#BC8F8F;
+    }
+    h1{
+        color: white;
+    text-shadow: 2px 2px 4px #000000;
+    }
+.button {
+   /* background-color: #4CAF50;/* Green */
+    background-color:hsla(290,100%,50%,0.3);
+    border: none;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    color: white;
+   padding: 20px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+      margin-top: 150px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.button4 {border-radius: 12px;}
+.wrapper {
+    text-align: center;
+}
+
+</style>
+
+</head>
+<body background="image2.jpg">
+    <div id="watermark">
+<p>Image Steganography</p>
+    </div>
+
+<h1 align="center"><strong>Welcome To Image Steganography</strong></h1>
+<div class="wrapper">
+   
+
+
+<input type=button class="button button4" onClick="location.href='encrypt.html'" value='Encryption Mode'>
+
+<input type=button class="button button4" onClick="location.href='showitemservlet'" value='Decryption Mode'>
+</div>
+</body>
+</html>

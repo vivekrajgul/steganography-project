@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="page4.css">
+  <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" 
+
+rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+<meta charset=utf-8 />
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet">
+
+<title>Encryption</title>
+<!--style>
+  article, aside, figure, footer, header, hgroup, 
+  menu, nav, section { display: block; }
+
+</style-->
+<style type="text/css" media="screen">
+  .button {
+    background-color:hsla(290,100%,50%,0.3);
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: none;
+    color: white;
+   padding: 20px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+   margin-left:450px;
+    float:right;
+    cursor: pointer;
+    text-align: center !important;
+}
+
+    #watermark {
+  color: #d0d0d0;
+  font-size: 50pt;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  position: absolute;
+  width: 584px;
+  height: 167px;
+  margin: 0;
+  z-index: -1;
+ left:359px;
+  top:268px;
+opacity:0.4;
+    }   
+    input.hidden-input, textarea.hidden-input
+        {
+            display: none;
+        }
+        input[type=radio]:checked + input {
+            display: inline-block;
+        }
+        input[type=radio]:checked + textarea {
+            display: inline-block;
+        }
+        body
+        {
+          color: white;
+          background: #BC8F8F;
+          font-family: 'Raleway';
+        }
+  < meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    
+    
+.h{
+text-align: center;
+}
+.formfield * {
+  vertical-align: middle;
+}
+.A2
+{
+  text-align: center;
+  margin-top: 150px;
+}
+.A3
+{
+  text-align: center; 
+}
+.A3  input
+{
+  //padding: 10px;
+  border-radius: 5px
+}
+.A1
+{
+  display: inline-block;
+  width: 20%;
+  margin :0px 60px 0px 60px;
+  text-align: center;
+}
+
+.A1.second
+{
+    width: 417px;
+    height: 98px;
+
+
+  width: 50%;
+ 
+  margin-top: 30px;
+}
+.formfield
+{//width: 100%;
+   // height: 100%;
+  text-align: center;
+}
+#blah
+{ //width: 100%;
+    //height: 100%;
+
+  border: 1px solid black;
+ width: 250px;
+  height: 200px;
+}
+</style>
+</head>
+<body>
+    <div id="watermark">
+<p>Image Steganography</p>
+    </div>
+    <form action="validateservlet" method="get">
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	
+      <a class="navbar-brand" href="#" style="padding-left:500px;padding-bottom: 0px;padding-top: 10px;">Welcome To Encryption Technique</a>
+    <input type="submit" name="logout" value="logout" class="button" align="right" border-radius="30px" style="
+    padding-bottom: 0px;
+    padding-top: 2.5;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2.5;
+    padding-top: 2px;
+    margin-top: 10px;
+">
+    </div>       
+     
+
+    
+  </div>
+</nav>
+        </form>
+    <form action="encryptservlet" method="post" enctype="multipart/form-data" name="myform" onsubmit="return validateform()">
+<div style='position:absolute;z-index:0;left:0;top:0;w idth:100%;height:100%'>
+  <!-- <img src='img1.jpg' style='width:100%;height:100%' alt='[]' /> -->
+</div>
+
+
+<div class="super">
+<div class="container-fluid main">  
+<div class="col-lg-12">
+<h3 class="A2" style="margin-top:30px;" >Select Any One Algorithm</h3>
+<div class="col-lg-12 A1-container">
+  
+  <div class="A1">
+           
+            <input type="radio" name="algo" value="pixelalgo">
+            <input type="password" style="color:black;" class='hidden-input' name="pixel" value="" 
+
+placeholder="Enter Key">
+			 <label>Pixel Indicator</label>
+        </div>
+        <div class="A1">
+            
+            <input type="radio" name="algo" value="triplealgo">
+            <input type="password" style="color:black;" class='hidden-input' name="triplea" value="" placeholder="Enter Key">
+			<label>Triple-A</label>
+        </div>
+        <div class="A1">
+            
+            <input type="radio" name="algo" value="dwtalgo">
+            <input type="password" style="color:black;" class='hidden-input' name="dwt" value="" placeholder="Enter Key">
+			<label>Discrete Wavelet Transform</label>
+        </div>
+		</div>
+
+<h3 class="A2">Select Input Type</h3>
+<div class="col-lg-12 A1-container">
+
+<div class="A1 second" style="margin-left:280px;">
+            
+           <input type="radio" name="textmsg">
+            <textarea type="text" required style="color:black;" class='hidden-input' name="txtmsg" value="" placeholder="enter your message" rows="5" cols="20"></textarea>
+			<label>Text Message</label>
+        </div>
+
+</div>
+</div>
+</div>
+<div class="container-fluid main">
+<div class="col-lg-12">
+<div class="col-lg-12">
+<div class="A3">
+<p class="formfield">
+  <!-- <label for="textarea">Receiver name</label> -->
+  <input type="text" style="color:black;" name="Receiver" value="" placeholder="Receiver Name">
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-lg-3" style="float:right;">
+<div class="row">
+<div class="formfield">
+  <div id="blah" style ="position:absolute; right:115px;top:-205px"></div>
+   
+<input type="file" style="right:150px;top:-750px margin-top: 60px;" onchange="readURL(this)" id="input11" name="image">
+</div>
+</div>
+</div>
+<div class="submit" style="text-align: center;">
+<input type="submit" style="width: 100px; margin-top:40px; margin-left:300px;" class='btn btn-success btn-lg' value="Submit">
+</div>
+    </form>
+
+</body>
+<script>
+function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .css({'background': 'url(' + e.target.result + ')',
+                            'bahckground-size': 'cover',
+                            'background-position': 'center',
+                            'background-repeat': 'no-repeat'
+                          
+                        })
+                        
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    
+  
+
+    
+    function validateform(){
+    
+    var password=document.myform.pixel.value;
+    var password1=document.myform.triplea.value;
+    var password2=document.myform.dwt.value;
+    
+ if(password.length==7 || password1.length==7 || password2.length==7){  
+  return true;  
+}
+else
+{
+  alert("Key must be 7 characters long."); 
+
+            return false;
+//window.locaion("encrypt.html");
+}
+
+}
+  </script>
+</script>
+
+
+</html>

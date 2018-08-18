@@ -1,0 +1,48 @@
+body, html
+{
+    height: 100%;
+}
+
+
+
+
+
+.A1{
+	padding-top:10px;
+	/*font-family: "Times New Roman", Times, serif;*/
+	font-size:20px;
+    /*display: inline-block;*/
+}
+.A2{
+	/*font-family: "Times New Roman", Times, serif;*/
+	font-size:30px;
+}
+
+.A3{
+	/*font-family: "Times New Roman", Times, serif;*/
+	font-size: 30px;
+	margin-top: 60px;
+    /*display: inline-block;*/
+}
+.A1-container{
+    display: flex;
+  
+}
+
+
+h3
+{
+    /*margin-top: 30px;*/
+    /*text-align: center;*/
+    display: block;
+}
+label
+{
+    font-weight: 400 !important;
+}
+
+
+.navbar
+{
+    margin-bottom: 0;
+}
