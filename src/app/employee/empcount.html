@@ -1,0 +1,7 @@
+<html>
+<body>
+<input type='radio' name='show'  value="all"[(ngModel)]="radiobuttonvalue" (change)="injectradiovalue()">{{ "All (" + all +")"}}
+	<input type='radio' name='show' value="male" [(ngModel)]="radiobuttonvalue" (change)="injectradiovalue()"  > {{ "Male ("+male +")"}}
+	<input type='radio' name='show' value="female" [(ngModel)]="radiobuttonvalue" (change)="injectradiovalue()" >{{"Female (" + female+")"}}
+</body>
+</html>

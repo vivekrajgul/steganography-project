@@ -1,0 +1,17 @@
+<html>
+<body >
+ 	<empcount *ngIf="employees" [all]="getall()" [male]="getmale()" [female]="getfemale()" (radiobuttonvalueinjected)="setradiobuttoonvalue($event)"></empcount>
+<br/>
+<table>
+<tr><th>Name</th><th>Company</th><th>Gender</th><th>Index</th><th>Date</th></tr>
+<ng-container *ngFor="let e of employees;">
+<tr  *ngIf="selectedemployees=='all'||selectedemployees==e.gender"><td>{{ e.name | employeeTitle:e.gender}}</td><td>{{ e.cmp }}</td><td>{{ e.gender  }}</td><td>{{ e.date }}</td></tr>
+</ng-container>
+
+<tr  *ngIf="!employees || employees.length==0"><td colspan="6">{{statusmessage}}</td></tr>
+
+</table>
+<button (click)="[getemp()]">update list</button>
+
+</body>
+</html>
